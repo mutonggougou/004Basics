@@ -23,7 +23,7 @@
 -->
 
 
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.ruanyifeng.com/rsd.xml" />
+    <!-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.ruanyifeng.com/rsd.xml" /> -->
     <title>刘俊超医生的个人网站 - Dr.Liu junchao's Personal Website</title>
 	<style>
 html{
@@ -45,7 +45,8 @@ body{
 	padding:0;
 	width:100%;
 	height:100%;
-	background-image:url(http://www.ruanyifeng.com/images_pub/pub_0.png);
+	
+	/* background-image:url(http://www.ruanyifeng.com/images_pub/pub_0.png); */
 	-webkit-transition: All 2s ease;
 	-moz-transition: All 2s ease;
 	-o-transition: All 2s ease;
@@ -233,7 +234,7 @@ body.one-column #container a{
 
                        <div id="header">
     <div id="header-inner">
-        <div id="header-content" onclick="backgroundImage();return false;">
+        <div id="header-content" onclick="backgroundImageNew();return false;">
 			<h1>刘俊超医生的个人网站</h1>
 			<p>Dr.junchao Liu's Personal Website</p>
         </div>
@@ -277,15 +278,41 @@ body.one-column #container a{
         </div>
     </div>
 <script>
-var pub_img_current_image;
-function backgroundImage(){
-var pub_img_path='http://www.ruanyifeng.com/images_pub/';
+// var pub_img_current_image;
+// function backgroundImage(){
+// var pub_img_path='http://www.ruanyifeng.com/images_pub/';
 
-var pub_img_num = 355;
+// var pub_img_num = 355;
+
+// var pub_img_current_no=function(){return Math.floor(Math.random()*pub_img_num+1);};
+
+// var pub_img_url=function(){return pub_img_path+'pub_'+pub_img_current_no()+'.jpg';};
+
+// if (pub_img_current_image === undefined ) pub_img_current_image = pub_img_url();
+
+// if ('querySelector' in document) {
+// 	var body = document.querySelector('body').style;
+// } else {
+// 	var body = document.body.style;
+// }
+// body.backgroundSize = 'cover';
+// body.backgroundRepeat = 'no-repeat';
+// body.backgroundImage = 'url('+ pub_img_current_image +')';
+
+// var span = document.getElementById('img_placer');
+// span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
+// }
+// backgroundImage();
+
+var pub_img_current_image;
+function backgroundImageNew(){
+var pub_img_path='https://cbat01.github.io/img/'
+
+var pub_img_num = 7;
 
 var pub_img_current_no=function(){return Math.floor(Math.random()*pub_img_num+1);};
 
-var pub_img_url=function(){return pub_img_path+'pub_'+pub_img_current_no()+'.jpg';};
+var pub_img_url=function(){return pub_img_path+pub_img_current_no()+'.jpg';};
 
 if (pub_img_current_image === undefined ) pub_img_current_image = pub_img_url();
 
@@ -301,7 +328,7 @@ body.backgroundImage = 'url('+ pub_img_current_image +')';
 var span = document.getElementById('img_placer');
 span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
 }
-backgroundImage();
+backgroundImageNew();
 
 var up = document.getElementById('up-arrow');
 var upStatus = 0;
