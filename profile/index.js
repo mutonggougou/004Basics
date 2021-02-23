@@ -17,3 +17,9 @@ navMenuItems.forEach(item => {
     item.addEventListener("click",e =>handleMenuItemClick(e.target));
  item.classList.contains('active') && handleMenuItemClick(item)   
 })
+
+// 返回上一页
+const back = document.getElementById("back");
+back.onclick = function(){
+    window.history.back(-1);
+}
