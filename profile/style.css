@@ -125,14 +125,14 @@ nav .indicator {
    color:var(--text-color-dark-gray); 
 }
 .frist-p{
-   font-size: 18px;
-   font-weight:300;
+   /* font-size: 18px;*/
+   font-weight:300; 
    margin-bottom: 10px;
 }
-.last-p{
-   font-size: 18px;
+ .last-p{
+   /* font-size: 18px; */
    font-weight:300;
-}
+} 
 .about-me{
    color:var(--text-color-dark-gray);
    font-weight:500;
