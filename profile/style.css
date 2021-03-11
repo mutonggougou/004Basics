@@ -20,11 +20,9 @@
    display:grid;
    align-items:center;
    justify-content:center;
-   /* height:55vh;   */
 }
 .profile-image {
    min-width:238px;
-   /* height:100%;  */
    overflow:hidden;
    align-self:start; 
 } 
@@ -59,7 +57,6 @@ nav a {
 }
 nav a.active{
    color:var(--primary-dark-color);
-   /* font-size: 22px; */
    
 }
 nav a:not(:last-child){
@@ -115,22 +112,19 @@ nav .indicator {
    font-size:10px;
    margin-right:6px;
 }
-.profile-p p:not(:last-child)::after{
-   margin-top:30px;
-}
 .profile-p{
    margin-top:3px;
-   margin-left: 16px;
-   /* color:var(--text-color-gray);;  */
+   margin-left: 13px;
+
    color:var(--text-color-dark-gray); 
 }
 .frist-p{
-   /* font-size: 18px;*/
-   font-weight:300; 
+  
+   font-weight:300;
    margin-bottom: 10px;
 }
- .last-p{
-   /* font-size: 18px; */
+.last-p{
+
    font-weight:300;
 } 
 .about-me{
